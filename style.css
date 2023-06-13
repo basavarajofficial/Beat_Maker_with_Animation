@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1{
+    font-family: 'Frijole', cursive;
+}
+header h2{
+    font-family: 'Dancing Script', cursive;
+    margin-left: 20px;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    margin: 50px 0 30px 0;
+}
+.pads{
+    background-color: lightblue;
+    width: 100%;
+    display: flex;
+}
+.pads > div{
+    height: 150px;
+    width: 100px;
+    flex: 1;
+    cursor :-webkit-grab;
+}
+.pads > div:hover{
+    scale: 0.9;
+    border-radius: 10px;
+}
+.pad1{
+   
+    background-color: rgb(244, 2, 195);
+}
+.pad2{
+    background-color: rgb(3, 3, 122);
+}
+.pad3{
+    background-color: rgb(224, 17, 58);
+}
+.pad4{
+    background-color: rgb(215, 215, 7);
+}
+.pad5{
+    background-color: rgb(52, 50, 50);
+}
+.pad6{
+    background-color: rgb(7, 200, 7);
+}
+
+@keyframes jump {
+    0%{
+       scale: 1;
+       opacity: 1;
+    }
+    25%{
+       scale: 1.5;
+       opacity: 0.9;
+    }
+    50%{
+       scale: 2;
+       opacity: 0.7;
+    }
+    75%{
+        scale: 3;
+        opacity: 0.5;
+    }
+    100%{
+        scale: 4;
+        opacity: 0.2;
+        
+    }
+}
+
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: 250px;
+    animation-play-state: smooth;
+    /* z-index: -1; */
+}
+
