@@ -90,3 +90,26 @@ header{
     /* z-index: -1; */
 }
 
+
+@media (max-width : 520px){
+    .pads{
+        margin-top: 200px;
+        background-color: lightblue;
+        /* width: 100%; */
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .pads > div{
+        max-height: 70px;
+        max-width: 100px;
+    }
+    .visual > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
